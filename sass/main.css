@@ -4,6 +4,62 @@
   box-sizing: 0;
 }
 
-h1 {
-  background-color: black;
+.box-container {
+  width: 100%;
+}
+
+.header {
+  width: 100%;
+  background-image: url(../assets/fondonavegador.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: grid;
+  grid-template-areas: "foto nav nav" "titulo titulo titulo" "subtitulo subtitulo subtitulo";
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+}
+.header a {
+  grid-area: foto;
+}
+.header a img {
+  width: 10rem;
+}
+.header ul {
+  grid-area: nav;
+  list-style: none;
+  display: flex;
+  color: white;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0 1rem;
+  font-size: large;
+}
+.header ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 1rem 0;
+}
+.header ul li a:hover {
+  border-top: solid white;
+  border-bottom: solid white;
+}
+.header h1 {
+  grid-area: titulo;
+  text-align: center;
+  color: white;
+  padding: 5rem 0 2rem 0;
+}
+.header h3 {
+  grid-area: subtitulo;
+  text-align: center;
+  color: white;
+  padding-bottom: 2rem;
+}
+
+@media (max-width: 844px) {
+  .header {
+    padding: 0;
+    margin: 0;
+  }
 }/*# sourceMappingURL=main.css.map */
