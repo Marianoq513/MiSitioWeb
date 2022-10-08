@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    background-image: url(../assets/fondonavegador.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    .navegador{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0.5rem;
+        a{
+            img{
+                width: 10rem;
+            }
+        }
+        ul{
+            list-style: none;
+            display: flex;
+            li{
+                display: flex;
+                margin: 1rem;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    padding: 0.5rem 0;
+                    &:hover{
+                        border-top: solid white;
+                        border-bottom: solid white;
+                    }
+                }
+
+            }
+        }
+    }
+    .titulo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        gap: 1rem 0;
+        p{
+            width: 15rem;
+            text-align: center;
+            font-size: x-large;
+            padding-bottom: 1.5rem;
+        }
+    }
+    .empezemos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+        a{
+            text-decoration: none;
+            color: black;
+            background:white;
+            font-weight: 600;
+            padding: 0.3rem 1rem;
+            border-radius: 45%;
+            &:hover{
+                background-color: transparent;
+                color: white;
+            }
+        }
+    }
+
+}
+section#servicios{
+    .introduccion{
+        display: flex;
+        flex-direction: row;
+        padding: 1rem;
+        gap: 3rem;
+    }
+}
